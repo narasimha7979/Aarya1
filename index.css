@@ -145,7 +145,7 @@ nav.scrolled {
     align-items: center;
 }
 
-.logo {
+/* .logo {
     font-family: 'Outfit', sans-serif;
     font-size: 2rem;
     font-weight: 800;
@@ -155,7 +155,7 @@ nav.scrolled {
     background-clip: text;
     letter-spacing: -0.5px;
     animation: logoGlow 3s ease-in-out infinite;
-}
+} */
 
 @keyframes logoGlow {
 
