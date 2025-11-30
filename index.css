@@ -144,7 +144,7 @@ nav.scrolled {
     justify-content: space-between;
     align-items: center;
 }
-
+/* 
 .logo {
     font-family: 'Outfit', sans-serif;
     font-size: 2rem;
@@ -167,7 +167,7 @@ nav.scrolled {
     50% {
         filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
     }
-}
+} */
 
 .nav-links {
     display: flex;
@@ -1196,4 +1196,5 @@ footer {
     mix-blend-mode: difference;
 
 }
+
 
