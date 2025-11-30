@@ -131,6 +131,29 @@ nav {
     border-bottom: 1px solid var(--border-color);
     transition: all var(--transition-normal);
 }
+.logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    background: #ff8c00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+    animation: logoGlow 3s ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 10px rgba(255, 140, 0, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px rgba(255, 140, 0, 0.8));
+    }
+}
 
 nav.scrolled {
     padding: 1rem 5%;
@@ -1172,6 +1195,7 @@ footer {
     mix-blend-mode: difference;
 
 }
+
 
 
 
