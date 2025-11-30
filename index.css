@@ -144,30 +144,6 @@ nav.scrolled {
     justify-content: space-between;
     align-items: center;
 }
-/* 
-.logo {
-    font-family: 'Outfit', sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    background: var( --secondary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: -0.5px;
-    animation: logoGlow 3s ease-in-out infinite;
-}
-
-@keyframes logoGlow {
-
-    0%,
-    100% {
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
-    }
-
-    50% {
-        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
-    }
-} */
 
 .nav-links {
     display: flex;
@@ -1196,5 +1172,6 @@ footer {
     mix-blend-mode: difference;
 
 }
+
 
 
