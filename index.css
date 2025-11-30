@@ -161,11 +161,11 @@ nav.scrolled {
 
     0%,
     100% {
-        filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.5));
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
     }
 
     50% {
-        filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.8));
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
     }
 }
 
@@ -1194,4 +1194,5 @@ footer {
     z-index: 9998;
     transition: all 0.3s ease;
     mix-blend-mode: difference;
+
 }
