@@ -452,3 +452,36 @@ const debouncedScroll = debounce(() => {
 }, 10);
 
 window.addEventListener('scroll', debouncedScroll);
+
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navOverlay = document.querySelector('.nav-overlay');
+const navLinksItems = document.querySelectorAll('.nav-links a');
+
+if (hamburger && navLinks && navOverlay) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking a link
+    navLinksItems.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Close menu when clicking overlay
+    navOverlay.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        navOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+}
